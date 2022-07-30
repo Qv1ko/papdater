@@ -7,5 +7,5 @@ function papdater(){
 	sudo apt-get update -y && sudo apt-get full-upgrade -y && sudo apt-get autoremove -y
 	sudo parrot-upgrade --fix-missing -y
 	searchsploit -u
-	echo "\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\n"
+	echo "\n\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\n"
 }
