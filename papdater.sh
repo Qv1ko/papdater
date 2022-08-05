@@ -7,6 +7,7 @@ function papdater(){
 	sudo apt-get update -y && sudo apt-get full-upgrade -y && sudo apt-get autoremove -y
 	sudo parrot-upgrade --fix-missing -y
 	echo "\n\t[+] UPDATING THE TOOLS DATABASES [+]\n"
-	searchsploit -u; nmap --script-updatedb
+	sudo nmap --script-updatedb
+	sudo searchsploit -u
 	echo "\n\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\n"
 }
