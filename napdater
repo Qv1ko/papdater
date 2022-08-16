@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Author: Víctor García (aka v1xo)
+
+function napdater(){
+	sudo nala update -y && sudo nala dist-upgrade -y && sudo nala full-upgrade -y && sudo nala autoremove -y
+	sudo parrot-upgrade --fix-missing -y
+	echo "\n\t[+] UPDATING THE TOOLS DATABASES [+]\n"
+	sudo nmap --script-updatedb
+	sudo searchsploit -u
+	echo "\n\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\n"
+}
