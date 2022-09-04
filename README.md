@@ -7,4 +7,4 @@ __To run the function correctly:__
   
   *In case there are frozen packages, don't worry, they will be updated or deleted automatically with the passing of the updates.*
 
-> Author: v1xo
+> Author: Qv1ko
