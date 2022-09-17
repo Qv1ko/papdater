@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function saptdater(){
+  echo "\n\t[+] UPDATING SYSTEM TOOLS [+]\n"
+  sudo apt update -y &>/dev/null && sudo apt dist-upgrade -y &>/dev/null && sudo apt full-upgrade -y &>/dev/null && sudo apt autoremove -y &>/dev/null
+  sudo apt-get update -y &>/dev/null && sudo apt-get full-upgrade -y &>/dev/null && sudo apt-get autoremove -y &>/dev/null
+  echo "\n\t[+] UPDATING THE SYSTEM [+]\n"
+  sudo parrot-upgrade --fix-missing -y &>/dev/null
+  echo "\n\t[+] UPDATING THE TOOLS DATABASES [+]\n"
+  sudo nmap --script-updatedb &>/dev/null
+  sudo searchsploit -u &>/dev/null
+  echo "\n\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\n"
+}
