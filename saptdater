@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function saptdater(){
-  clear; echo "\n[+] [                    ] -> UPDATING SYSTEM TOOLS [+]\r"
+  sudo clear; echo "\n[+] [                    ] -> UPDATING SYSTEM TOOLS [+]\r"
   sudo apt update -y &>/dev/null && clear; echo "\n[+] [//                  ] -> UPDATING SYSTEM TOOLS [+]\r"
   sudo apt full-upgrade -y &>/dev/null && clear; echo "\n[+] [////                ] -> UPDATING SYSTEM TOOLS [+]\r"
   sudo apt autoremove -y &>/dev/null && clear; echo "\n[+] [//////              ] -> UPDATING SYSTEM TOOLS [+]\r"
