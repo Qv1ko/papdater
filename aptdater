@@ -1,11 +1,12 @@
 #!/bin/bash
 
 function aptdater(){
+	echo "\n\t[+] UPDATING SYSTEM TOOLS [+]\r"
 	sudo apt update -y && sudo apt dist-upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y
 	sudo apt-get update -y && sudo apt-get full-upgrade -y && sudo apt-get autoremove -y
 	sudo parrot-upgrade --fix-missing -y
-	echo "\n\t[+] UPDATING THE TOOLS DATABASES [+]\n"
+	echo "\n\t[+] UPDATING THE TOOLS DATABASES [+]\r"
 	sudo nmap --script-updatedb
 	sudo searchsploit -u
-	echo "\n\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\n"
+	echo "\n\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\r"
 }
