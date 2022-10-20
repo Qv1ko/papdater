@@ -3,8 +3,8 @@
 function naldater(){
 	sudo nala update && sudo nala upgrade -y && sudo nala autoremove -y
 	sudo parrot-upgrade --fix-missing -y
-	echo "\n\t[+] UPDATING THE TOOLS DATABASES [+]\n"
+	echo "\n\t[+] UPDATING THE TOOLS DATABASES [+]\r"
 	sudo nmap --script-updatedb
 	sudo searchsploit -u
-	echo "\n\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\n"
+	echo "\n\n\t[+] UPDATE SUCCESSFULLY COMPLETED [+]\r"
 }
