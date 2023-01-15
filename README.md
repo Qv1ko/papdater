@@ -8,17 +8,22 @@ Functions to add to the shell configuration, to automatically update Parrot OS S
 - 🇺🇸 English
 
 ## Installation
-1. Clone the repository on your system:
-`git clone https://github.com/Qv1ko/papdater.git`
-2. Go inside the papdater directory:
-`cd papdater`
-Select a function (**aptdater**, **naldater** or **saptdater**) and add the file code to the shell configuration file:
-`echo {file} > {configuration file}`.
+1. Clone the repository on your system.
+    ```bash
+    git clone https://github.com/Qv1ko/papdater.git
+    ```
+2. Go inside the papdater directory.
+    ```bash
+    cd papdater
+    ```
+3. Select a function ([**aptdater**](./aptdater), [**naldater**](./naldater) or [**saptdater**](./saptdater)) and add the file code to the shell configuration file.
+    ```bash
+    echo {file} > {shell configuration file}
+    ```
 
 ## Usage
 
-1. Run the function from the terminal:
-`{file}`
+1. Type the name of the function you have chosen in the terminal to run the function.
 2. Enter the administrator user's password.
-- You have to run as a user without administrator privileges.
-- There may be frozen packages (these will be automatically updated or removed with the passing of the updates).
+- *You have to run as a user without administrator privileges.*
+- *There may be frozen packages (these will be automatically updated or removed with the passing of the updates).*
